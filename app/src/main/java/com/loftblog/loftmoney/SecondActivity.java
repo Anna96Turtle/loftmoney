@@ -12,11 +12,9 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        try {
+        if (getIntent().getExtras() != null) {
             String title = getIntent().getExtras().getString("Title");
             Log.e("TAG", "Title is " + title);
-        } catch (NullPointerException e) {
-            e.printStackTrace();
         }
     }
 }
