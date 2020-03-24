@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Loftmoney</string>
     <string name="hello_title">Hello World!</string>
-    <string name="nextTitle">Push me and relax</string>
+    <string name="next_title">Push me and relax</string>
+    <string name="edittext_name_hint">Name</string>
+    <string name="edittext_price_hint">Price</string>
+    <string name="add_button_title">Add</string>
 </resources>
