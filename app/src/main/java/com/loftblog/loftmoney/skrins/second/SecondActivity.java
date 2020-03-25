@@ -1,9 +1,11 @@
-package com.loftblog.loftmoney;
+package com.loftblog.loftmoney.skrins.second;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+
+import com.loftblog.loftmoney.R;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -12,9 +14,5 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        if (getIntent().getExtras() != null) {
-            String title = getIntent().getExtras().getString("Title");
-            Log.e("TAG", "Title is " + title);
-        }
     }
 }
