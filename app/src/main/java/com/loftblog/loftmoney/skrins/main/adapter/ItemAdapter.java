@@ -38,7 +38,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
-    holder.bind(mDataList.get(position));
+        holder.bind(mDataList.get(position));
     }
 
     @Override
