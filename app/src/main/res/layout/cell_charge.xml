@@ -1,46 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="29dp"
+    android:paddingEnd="24dp"
+    android:paddingStart="24dp"
+    android:paddingBottom="29dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/txtItemName"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingTop="29dp"
-        android:paddingEnd="24dp"
-        android:paddingStart="24dp"
-        android:paddingBottom="29dp">
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/edittext_name_hint"
+        android:textColor="@color/light_primary_text_color"
+        android:textSize="@dimen/primary_text_size" />
 
-
-        <TextView
-            android:id="@+id/txtItemName"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily=""
-            android:textColor="@color/light_primary_text_color"
-            android:textSize="@dimen/primary_text_size"/>
-
-        <TextView
-            android:id="@+id/txtItemValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:layout_marginStart="96dp"
-            android:fontFamily="sans-serif"
-            android:textStyle="bold"
-            android:textColor="@color/light_accent_text_color"
-            android:textSize="@dimen/primary_text_size" />
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/divider_size"
-        android:layout_gravity="bottom" />
-
-    
+    <TextView
+        android:id="@+id/txtItemValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginStart="96dp"
+        android:layout_weight="0"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/light_accent_text_color"
+        android:textSize="@dimen/primary_text_size"
+        android:text="@string/edittext_price_hint"
+        />
 </LinearLayout>
+
+
+
+
+
+
