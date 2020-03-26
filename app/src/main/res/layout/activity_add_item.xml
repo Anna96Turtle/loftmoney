@@ -2,30 +2,26 @@
 <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <LinearLayout
-        android:layout_above="@id/add_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="33dp"
-        android:paddingEnd="104dp"
-        android:layout_marginBottom="61dp"
-        android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingStart="33dp"
+    android:paddingEnd="104dp"
+    android:layout_marginBottom="61dp"
+    >
 
      <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/edittext_name_hint"
-        />
+         android:id="@+id/et1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:hint="@string/edittext_name_hint" />
 
      <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/edittext_price_hint"
-        />
-
-    </LinearLayout>
+         android:id="@+id/et2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="@string/edittext_price_hint"
+         android:layout_below="@+id/et1"
+         />
 
     <Button
         android:id="@+id/add_button"
@@ -34,6 +30,8 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="@string/add_button_title"
-        android:background="@null" />
-
+        android:background="@null"
+        android:layout_below="@+id/et2"
+        />
     </RelativeLayout>
+
