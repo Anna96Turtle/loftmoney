@@ -46,17 +46,17 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         return mDataList.size();
     }
 
-    static class ItemViewHolder extends RecyclerView.ViewHolder {
-        private TextView txtName = itemView.findViewById(R.id.txtItemName);
-        private TextView txtVelue = itemView.findViewById(R.id.txtItemValue);
+        static class ItemViewHolder extends RecyclerView.ViewHolder {
+            private TextView txtName = itemView.findViewById(R.id.txtItemName);
+            private TextView txtVelue = itemView.findViewById(R.id.txtItemValue);
 
-        ItemViewHolder(@NonNull View itemView) {
+            ItemViewHolder(@NonNull View itemView) {
             super(itemView);
         }
 
         void bind(Item Item){
-        txtName.setText(Item.getName());
-        txtVelue.setText(Item.getValue());
+            txtName.setText(Item.getName());
+            txtVelue.setText(Item.getValue());
         }
 
     }
