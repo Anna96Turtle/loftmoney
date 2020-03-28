@@ -1,9 +1,11 @@
-package com.loftblog.loftmoney;
+package com.loftblog.loftmoney.skrins;
 
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.loftblog.loftmoney.R;
 
 public class AddItemActivity extends AppCompatActivity {
 
@@ -13,6 +15,3 @@ public class AddItemActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_item);
     }
 }
-
-
-

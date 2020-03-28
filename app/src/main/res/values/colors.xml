@@ -5,4 +5,6 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="light_primary_text_color">#666664</color>
     <color name="light_accent_text_color">#4a90e2</color>
+    <color name="color_tab">#ffc107</color>
+    <color name="Add">#7ed321</color>
 </resources>

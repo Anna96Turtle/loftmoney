@@ -14,52 +14,47 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder> {
-
     private List<Item> mDataList = new ArrayList<>();
 
-    public void setNewData(List<Item> newData) {
+    public void addNewData(List<Item> newData) {
         mDataList.clear();
         mDataList.addAll(newData);
         notifyDataSetChanged();
     }
 
-     public void addDataToTop(Item model){
+    public void addDataToTop(Item model) {
         mDataList.add(0, model);
-        notifyItemChanged(0);
+        notifyItemInserted(0);
     }
-
 
     @NonNull
     @Override
-        public ItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-            return new ItemViewHolder(layoutInflater.inflate(R.layout.cell_charge, parent,false));
+    public ItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
+        return new ItemViewHolder(layoutInflater.inflate(R.layout.cell_charge, parent, false));
     }
 
     @Override
-        public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
         holder.bind(mDataList.get(position));
     }
 
     @Override
-        public int getItemCount() {
+    public int getItemCount() {
         return mDataList.size();
     }
 
-        static class ItemViewHolder extends RecyclerView.ViewHolder {
-            private TextView txtName = itemView.findViewById(R.id.txtItemName);
-            private TextView txtVelue = itemView.findViewById(R.id.txtItemValue);
+    static class ItemViewHolder extends RecyclerView.ViewHolder {
+        private TextView txtName = itemView.findViewById(R.id.txtItemName);
+        private TextView txtValue = itemView.findViewById(R.id.txtItemValue);
 
-            ItemViewHolder(@NonNull View itemView) {
+        ItemViewHolder(@NonNull View itemView) {
             super(itemView);
         }
 
-            void bind(Item Item){
-                txtName.setText(Item.getName());
-                txtVelue.setText(Item.getValue());
+        void bind(Item item) {
+            txtName.setText(item.getName());
+            txtValue.setText(item.getValue());
         }
-
     }
-
-
 }
