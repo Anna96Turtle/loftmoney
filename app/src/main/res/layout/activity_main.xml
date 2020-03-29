@@ -13,11 +13,10 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabMain"
-        android:layout_width="21dp"
-        android:layout_height="37dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        add:fabSize="normal"
         android:background="@color/color_tab" />
 
 </FrameLayout>
