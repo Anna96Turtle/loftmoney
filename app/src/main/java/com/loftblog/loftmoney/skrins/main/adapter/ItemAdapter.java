@@ -16,7 +16,8 @@ import java.util.List;
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder> {
     private List<Item> mDataList = new ArrayList<>();
 
-    public void addNewData(List<Item> newData) {
+
+    public void setNewData(List<Item> newData) {
         mDataList.clear();
         mDataList.addAll(newData);
         notifyDataSetChanged();
@@ -41,6 +42,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
 
     @Override
     public int getItemCount() {
+
         return mDataList.size();
     }
 
