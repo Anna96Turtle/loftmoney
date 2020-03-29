@@ -38,7 +38,7 @@ public class SecondActivity extends AppCompatActivity {
 
                 Intent intent = new Intent();
                 intent.putExtra(Item.KEY_NAME, item);
-                setResult(RESULT_OK, intent)
+                setResult(RESULT_OK, intent);
                 finish();
             }
         });
