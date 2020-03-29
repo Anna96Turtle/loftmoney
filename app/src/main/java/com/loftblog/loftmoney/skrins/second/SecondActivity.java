@@ -26,23 +26,21 @@ public class SecondActivity extends AppCompatActivity {
         Button buttonAdd = findViewById(R.id.btnSecondEnter);
 
         buttonAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String name = textName.getText().toString();
-                String value = textValue.getText().toString();
+    @Override
+    public void onClick(View v) {
+        String name = textName.getText().toString();
+        String value = textValue.getText().toString();
 
-                if (TextUtils.isEmpty(name) || TextUtils.isEmpty(value)) {
-                    return;
-                }
+    if (TextUtils.isEmpty(name) || TextUtils.isEmpty(value)) {return;}
 
-                String valueString = value + " Р";
-                Item item = new Item(name, valueString);
+        String valueString = value + " Р";
+        Item item = new Item(name, valueString);
 
-                Intent intent = new Intent();
-                intent.putExtra(Item.KEY_NAME, item);
-                setResult(RESULT_OK, intent);
-                finish();
-            }
-        });
-    }
+        Intent intent = new Intent();
+        intent.putExtra(Item.KEY_NAME, item);
+        setResult(RESULT_OK, intent)
+        finish();
+        }
+     });
+   }
 }
