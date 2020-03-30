@@ -13,17 +13,17 @@
         android:layout_marginBottom="61dp"
         android:orientation="vertical">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/edittext_name_hint"
-            />
+     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edittext_name_hint"
+        />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/edittext_price_hint"
-            />
+     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edittext_price_hint"
+        />
 
     </LinearLayout>
 
@@ -36,4 +36,4 @@
         android:text="@string/add_button_title"
         android:background="@null" />
 
-</RelativeLayout>
+    </RelativeLayout>
